@@ -46,16 +46,16 @@
         <div><h2>Contactate conmigo</h2></div>
         <form name="contact" method="POST" data-netlify="true">
             <p>
-              <label>Nombre: <input type="text" name="name" /></label>
+              <label>Nombre: <input type="text" name="name" id="name" maxlength="30"/></label>
             </p>
             <p>
-              <label>Mail: <input type="email" name="email" /></label>
+              <label>Mail: <input type="email" name="email" id="mail"/></label>
             </p>
             <p>
-              <label>Mensaje: <textarea name="message"></textarea></label>
+              <label>Mensaje: <textarea name="message" id="message"></textarea></label>
             </p>
             <p>
-              <button type="submit">Enviar</button>
+              <button type="submit" onclick="validar()" name="btn-send" id="btn-send">Enviar</button>
             </p>
           </form>
 
