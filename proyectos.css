@@ -93,8 +93,10 @@ input[type="radio"]{
 
 
 .post button{
+    display: block;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 50px;
     font-size: 16px;
     background: #46a2fd;
@@ -127,7 +129,7 @@ input[type="radio"]{
 [value="HTML"]:checked ~ .posts .post:not([data-category~="HTML"]),
 [value="CSS"]:checked ~ .posts .post:not([data-category~="CSS"]),
 [value="JS"]:checked ~ .posts .post:not([data-category~="JS"]),
-[value="PHP"]:checked ~ .posts .post:not([data-category~="PHP"]),
+[value="BOOTSTRAP"]:checked ~ .posts .post:not([data-category~="BOOTSTRAP"]),
 [value="NODEJS"]:checked ~ .posts .post:not([data-category~="NODEJS"]),
 [value="VUE"]:checked ~ .posts .post:not([data-category~="VUE"]){
     display: none;
@@ -137,7 +139,7 @@ input[type="radio"]{
 [value="HTML"]:checked ~ .container-category [for="HTML"],
 [value="CSS"]:checked ~ .container-category [for="CSS"],
 [value="JS"]:checked ~ .container-category [for="JS"],
-[value="PHP"]:checked ~ .container-category [for="PHP"],
+[value="BOOTSTRAP"]:checked ~ .container-category [for="BOOTSTRAP"],
 [value="NODEJS"]:checked ~ .container-category [for="NODEJS"],
 [value="VUE"]:checked ~ .container-category [for="VUE"]{
     background: #46a2fd;
