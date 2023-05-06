@@ -50,6 +50,12 @@ input[type="radio"]{
     border-radius: 10px;
     overflow: hidden;
     padding-bottom: 20px;
+    transition: 200ms;
+}
+
+.posts .post:hover{
+    transform: scale(1.05);
+    transition: 200ms;
 }
 
 .post .ctn-img{
