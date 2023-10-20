@@ -4,8 +4,8 @@
 }
 
 .container-all {
-    background: linear-gradient(rgba(0, 85, 134, 0.50), rgba(0, 85, 134, 0.50) ),
-    url(img/back3.jpg);
+    background: linear-gradient(rgba(0, 10, 10, 0.5), rgba(5, 60, 112, 0.8) ),
+    url(img/contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
