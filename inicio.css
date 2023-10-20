@@ -53,7 +53,7 @@ border-radius: 50%;
 /*Main*/
 
 .container-content{
-    width: 1200px;
+    width: 1000px;
     margin: auto;
     margin-top: 40px;
     display: flex;
@@ -100,20 +100,32 @@ article img{
 
 /*Asides*/
 
+.container-aside{  /*agregado*/
+    display: flex;
+    justify-content: center;
+}
+
 .container-aside aside{
-  width: 320px;
+  width: 430px;
   border-right: 6px;
   box-shadow: 0 0 20px -20px black;
   border-radius: 6px;
   overflow: hidden;
-  margin-left: 40px;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   background: #fff;
+  transition: 200ms;
+  margin: 10px;
+  margin-top: 15px; 
+}
+
+.container-aside aside:hover{  /*efectos agregados*/
+    transform: scale(1.03);
+    transition: 200ms;
 }
 
 .container-aside aside img{
     width: 100%;
+    object-fit: cover;    
 }
 
 .container-aside aside h2,
@@ -124,7 +136,7 @@ article img{
 
 .container-aside aside button{
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 50px;
@@ -154,16 +166,10 @@ article img{
 
     .container-content{
         width: 100%;
-        flex-direction: column;
     }
 
     article{
         box-shadow: 0 0 0 0;
-    }
-
-    .container-aside{
-        display: flex;
-        justify-content: center;
     }
 
     .container-aside aside{
