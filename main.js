@@ -26,7 +26,6 @@ function validar(event) {
     }
 
     document.contact.submit();
-    window.location.href = "enviado.html";
 }
 
 const form = document.querySelector("form[name='contact']");
