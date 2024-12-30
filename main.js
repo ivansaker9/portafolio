@@ -10,11 +10,12 @@ function mostrar_menu(){
 
 function validar(event) {
 	event.preventDefault();
-	var nombre = document.getElementById("name").value;
+	  var nombre = document.getElementById("name").value;
+	  var apellido = document.getElementById("lastName").value;
     var correo = document.getElementById("mail").value;
     var mensaje = document.getElementById("message").value;
 	
-    if (nombre == "" || correo == "" || mensaje == "") {
+    if (nombre == "" || apellido == "" || correo == "" || mensaje == "") {
       alert("Por favor complete todos los campos del formulario.");
       return false;
     }
