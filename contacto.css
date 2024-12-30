@@ -23,6 +23,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 800px;
+    animation: fadeIn 0.5s ease-in-out;
   }
 
 .form-container:before{
@@ -92,7 +93,10 @@
   }
   
   button:hover{
-    opacity: 0.9;
+    background-color: #065A9D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: 0.5s;
   }
   
   .thank-you-message {
@@ -125,3 +129,14 @@
   .container-footer{
     margin-top: 0px;
   }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

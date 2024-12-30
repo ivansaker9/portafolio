@@ -1,0 +1,69 @@
+.container-all {
+    background: linear-gradient(rgba(0, 10, 10, 0.7), rgba(5, 60, 112, 0.8)),
+    url(img/contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    margin: 0;
+}
+
+.thank-you {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.thank-you h1 {
+    font-size: 2rem;
+    color: #46a2fd;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.thank-you p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.thank-you a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #46a2fd;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.thank-you a:hover {
+    background-color: #065A9D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.container-footer{
+    margin-top: 0px;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

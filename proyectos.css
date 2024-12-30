@@ -33,6 +33,7 @@ input[type="radio"]{
 .container-post{
     max-width: 1200px;
     margin: auto;
+    animation: fadeIn 0.7s ease-in-out;
 }
 
 .posts{
@@ -123,6 +124,9 @@ input[type="radio"]{
 
 .post button:hover{
     opacity: 0.9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: 0.5s;
 }
 
 
@@ -167,5 +171,16 @@ input[type="radio"]{
 @media screen and (max-width: 580px){
     .posts{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

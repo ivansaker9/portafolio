@@ -59,6 +59,7 @@ border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    animation: fadeIn 0.7s ease-in-out;
 }
 
 article{
@@ -151,7 +152,10 @@ article img{
 }
 
 .container-aside aside button:hover{
-    opacity: 0.9;
+    background-color: #065A9D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 1220px){
@@ -191,4 +195,15 @@ article img{
         right: 20px;
     }
 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
